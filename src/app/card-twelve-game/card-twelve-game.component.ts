@@ -13,18 +13,18 @@ interface Card {
 })
 export class CardTwelveGameComponent {
   cards: Card[] = [
-    { image: './../assets/game1.jpg', flipped: false, matched: false },
-    { image: './../assets/game2.jpg', flipped: false, matched: false },
-    { image: './../assets/game3.jpg', flipped: false, matched: false },
-    { image: './../assets/game4.jpg', flipped: false, matched: false },
-    { image: './../assets/game1.jpg', flipped: false, matched: false },
-    { image: './../assets/game2.jpg', flipped: false, matched: false },
-    { image: './../assets/game5.jpg', flipped: false, matched: false },
-    { image: './../assets/game6.jpg', flipped: false, matched: false },
-    { image: './../assets/game3.jpg', flipped: false, matched: false },
-    { image: './../assets/game4.jpg', flipped: false, matched: false },
-    { image: './../assets/game5.jpg', flipped: false, matched: false },
-    { image: './../assets/game6.jpg', flipped: false, matched: false },
+    { image: 'assets/game1.jpg', flipped: false, matched: false },
+    { image: 'assets/game2.jpg', flipped: false, matched: false },
+    { image: 'assets/game3.jpg', flipped: false, matched: false },
+    { image: 'assets/game4.jpg', flipped: false, matched: false },
+    { image: 'assets/game1.jpg', flipped: false, matched: false },
+    { image: 'assets/game2.jpg', flipped: false, matched: false },
+    { image: 'assets/game5.jpg', flipped: false, matched: false },
+    { image: 'assets/game6.jpg', flipped: false, matched: false },
+    { image: 'assets/game3.jpg', flipped: false, matched: false },
+    { image: 'assets/game4.jpg', flipped: false, matched: false },
+    { image: 'assets/game5.jpg', flipped: false, matched: false },
+    { image: 'assets/game6.jpg', flipped: false, matched: false },
   ];
 
   flippedCards: Card[] = [];

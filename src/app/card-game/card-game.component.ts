@@ -13,12 +13,12 @@ interface Card {
 })
 export class CardGameComponent {
   cards: Card[] = [
-    { image: './../assets/game1.jpg', flipped: false, matched: false },
-    { image: './../assets/game2.jpg', flipped: false, matched: false },
-    { image: './../assets/game3.jpg', flipped: false, matched: false },
-    { image: './../assets/game1.jpg', flipped: false, matched: false },
-    { image: './../assets/game2.jpg', flipped: false, matched: false },
-    { image: './../assets/game3.jpg', flipped: false, matched: false },
+    { image: 'assets/game1.jpg', flipped: false, matched: false },
+    { image: 'assets/game2.jpg', flipped: false, matched: false },
+    { image: 'assets/game3.jpg', flipped: false, matched: false },
+    { image: 'assets/game1.jpg', flipped: false, matched: false },
+    { image: 'assets/game2.jpg', flipped: false, matched: false },
+    { image: 'assets/game3.jpg', flipped: false, matched: false },
   ];
 
   flippedCards: Card[] = [];
