@@ -1,0 +1,22 @@
+<div class="card-game">
+  <div *ngFor="let card of cards" (click)="flipCard(card)">
+    <div class="card" [ngClass]="{'flipped': card.flipped, 'matched': card.matched}">
+      <div class="front"></div>
+      <div class="back" [ngStyle]="{'background-image': 'url(' + card.image + ')'}"></div>
+    </div>
+  </div>
+
+  <div class="counters">
+    <div class="info-block total-moves">
+      <p>Total Moves: {{ totalMoves }}</p>
+    </div>
+  
+    <div class="info-block successful-matches">
+      <p>Successful Matches: {{ successfulMatches }}</p>
+    </div>
+  
+    <div class="info-block rounds">
+      <p>Rounds: {{ rounds }}</p>
+    </div>
+  </div>
+</div>

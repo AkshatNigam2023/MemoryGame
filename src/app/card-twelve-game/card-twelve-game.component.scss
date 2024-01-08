@@ -1,0 +1,83 @@
+.card-twelve-game {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    grid-template-rows: repeat(4, 1fr); 
+    gap: 10px;
+  
+    .card {
+      width: 100px;
+      height: 150px;
+      perspective: 1000px;
+      cursor: pointer;
+      position: relative;
+  
+      .front,
+      .back {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        backface-visibility: hidden;
+        transition: transform 0.5s;
+        border: 1px solid #ddd;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        border-radius: 8px;
+      }
+  
+      .front {
+        transform: rotateY(0deg);
+        background-color: #333;
+      }
+  
+      .back {
+        transform: rotateY(180deg);
+        background-size: cover;
+        background-position: center;
+      }
+  
+      &.flipped .front {
+        transform: rotateY(180deg);
+      }
+  
+      &.flipped .back {
+        transform: rotateY(360deg);
+      }
+  
+      &.matched {
+        visibility: hidden;
+      }
+    }
+    .info-block {
+      margin-top: 20px;
+      padding: 15px;
+      border-radius: 8px;
+      background-color: #f1f1f1;
+      text-align: center;
+  
+      p {
+        margin: 0;
+        font-size: 16px;
+        color: #333;
+      }
+    }
+    .counters{
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+      justify-content: center;
+      align-items: center;
+    }
+    .total-moves {
+      background-color: #8e44ad; 
+      color: #fff; 
+    }
+  
+    .successful-matches {
+      background-color: #27ae60; 
+      color: #fff; 
+    }
+  
+    .rounds {
+      background-color: #3498db; 
+      color: #fff;
+    }
+  }
+  
